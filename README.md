@@ -1,3 +1,50 @@
+# Light-Bootstrap-React-DashBoard-Twitter-Sentiment-Analysis
+
+Project based on react-node-bootstrap for providing Analytic Dashboard for Twitter Sentiment Analysis.
+
+## Installation
+
+Use the package manager [npm](https://npmjs.com/) to install foobar.
+
+ In root folder of project 
+```bash
+npm install
+```
+
+
+## Usage
+
+### Production
+Place the mongo-db url in the [node_backened/.env](#) file by the variable name [DBURL](#)
+
+In node_backened folder type following commands in terminal
+```bash
+npm install
+npm install nodemon -g    #if nodemon is not installed
+npx nodemon server
+```
+App will run at port 5000
+
+### Development
+start node server as production steps
+Now in project root folder type following commands in the terminal
+```bash
+npm install
+npm start
+```
+you can change the server address by changing [REACT_APP_BACKENED_URL](#) variable in [.env.development](#) file present in the root of the folder.
+
+## UI Components 
+Documentation of the UI components is presented below use if you find some error or need help in UI Components
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
 # [Light Bootstrap Dashboard React](https://demos.creative-tim.com/light-bootstrap-dashboard-react/#/?ref=lbdr-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fcreativetimofficial.github.io%2Flight-bootstrap-dashboard-react&text=Light%20Bootstrap%20Dashboard%20React%20-%20Free%20Bootstrap%20Admin%20Template&original_referer=https%3A%2F%2Fdemos.creative-tim.com%2Flight-bootstrap-dashboard-react%2F&via=creativetim&hashtags=react%2Cbootstrap%2Creact-bootstrap%2Ccreativetim%2Ccreative-tim)
 
 
