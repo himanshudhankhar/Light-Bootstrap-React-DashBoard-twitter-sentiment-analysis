@@ -1,0 +1,14 @@
+install node
+install npm
+install mongodb
+run mongodb server
+change url of mongodb server in node_backened/.env file DBURL
+
+now run node_backened/server.js file with npm server or u can use nodemon to run see the documentation on npmjs.com
+
+now on http://localhost:5000/  dashboard will be available
+
+for running development server 
+in root folder 
+do npm install 
+and then npm start

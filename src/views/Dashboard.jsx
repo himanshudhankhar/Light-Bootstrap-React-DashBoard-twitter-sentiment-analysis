@@ -97,7 +97,7 @@ class Dashboard extends Component {
   // console.log(tweets);
      var tweetsSample =  new Array();
   if( tweets!=undefined && tweets.length!=0){
-  for(let i=0;i<Math.min(10,  tweets.length);i++){
+  for(let i=0;i<Math.min(20,  tweets.length);i++){
     tweetsSample.push( tweets[i]);
   }
   var renderTweets =tweetsSample.map(function(item, i){
@@ -115,10 +115,10 @@ class Dashboard extends Component {
         color = "#f2050a";
       }
         return (
-              <div key={i} style={{paddingLeft:10,paddingRight:5,marginTop:5,marginBottom:5}} >
-              <p>Sample Tweet: {i+1}</p>
-              <p>{item.text}</p>
-              <p style={{"color": color}}>Predicted Sentiment - {item.label}</p>
+              <div key={i} style={{paddingLeft:10,paddingRight:5,marginTop:2,marginBottom:2,backgroundColor:'#F7F7F8',borderRadius:5,marginLeft:5,marginRight:5}} >
+              <p style={{fontSize:10}}><b>Sample Tweet: {i+1}</b><br/> 
+             {item.text} <br/>
+               <b style={{"color": color,fontSize:12}}>Predicted Sentiment - {item.label}</b></p>
               </div>
             );
       });
@@ -273,6 +273,22 @@ class Dashboard extends Component {
           ["Strong Negative", abs(this.props.globalstate.stated.resultScore.strongNegativeStrength)] // CSS-style declaration
         ]}
           options = {{
+            slices: [
+              {
+                color: "#FFBF00"
+              },
+              {
+                color: "#04f9e9"
+              },
+              {
+                color: "#990099"
+              },
+              {
+                color: "#5af23c"
+              },{
+                color:'#f90404'
+              }
+            ],
             title : "Sentiments",
             pieHole: 0.4,
             is3D: false}
